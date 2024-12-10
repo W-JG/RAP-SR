@@ -1,6 +1,6 @@
 # RAP-SR: RestorAtion Prior Enhancement in Diffusion Models for Realistic Image Super-Resolution
 
-**Jiangang Wang | Qingnan Fan | Jinwei Chen | Hong Gu | Feng Huang | Wenqi Ren**
+**Jiangang Wang | [Qingnan Fan](https://fqnchina.github.io/)  | Jinwei Chen | Hong Gu | Feng Huang | [Wenqi Ren](https://rwenqi.github.io/)**
 
 > Shenzhen Campus of Sun Yat-sen University  
 > vivo Mobile Communication Co. Ltd
