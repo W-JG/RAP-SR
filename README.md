@@ -7,6 +7,14 @@
 
 ---
 
+### 📄 Paper Access
+
+If you encounter difficulties opening the paper on arXiv, you can find it in the following directory: `paper/2412.07149v1.pdf`. 
+
+Alternatively, you can download it directly from Google Drive via the following link:  **[RAP-SR PDF](https://drive.google.com/file/d/1C4IDmI1ZtZdR-Uy6-i5zv2sXa9FzcydC/view?usp=sharing)**  
+
+----
+
 ### 🔥 Code Release
 
 The source code for RAP-SR is under preparation and will be released soon. Stay tuned for updates!
