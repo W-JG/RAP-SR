@@ -1,0 +1,10 @@
+diffusers==0.25.0
+torch==2.0.1
+accelerate
+transformers==4.25.0
+xformers    
+torchvision
+huggingface_hub==0.25.2
+einops
+opencv-python
+pillow

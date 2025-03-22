@@ -1,0 +1,87 @@
+output_dir: "./experiment/RPEF"
+
+pretrained_model_name_or_path: 'stable-diffusion-2-1-base'
+
+train_batch_size: 20
+gradient_accumulation_steps: 1
+dataloader_num_workers: 20
+
+dataset_opt:
+    top_img_list_txt: 'HFAID/image'
+    gen_folder_path: ''
+    lr_img_folder: ''
+    top_ration: 0.8
+    lr_ration: 0.2
+    degra_params: dataloaders/degradation_setting/params_realesrgan_seesr.yml
+    resolution: 512
+    null_text_ratio: 0.05
+    wo_x_v_prompt: False
+
+checkpointing_steps: 500
+max_train_steps: 4000
+validation_steps:  500
+validation_prompts:
+  - 'In a lush forest, there is a shimmering lake with a group of birds, bears, and sheep playing. The screen should be high-definition, realistic, and not anime style.'
+  - '[V]. In a lush forest, there is a shimmering lake with a group of birds, bears, and sheep playing. The screen should be high-definition, realistic, and not anime style.'
+  - '[X]. In a lush forest, there is a shimmering lake with a group of birds, bears, and sheep playing. The screen should be high-definition, realistic, and not anime style.'
+  -  "a photo of a bird"
+  -  "[V]. a photo of a bird"
+  -  "[X]. a photo of a bird"
+  -  "A beautiful castle beside a waterfall in the woods, by Josef Thoma, matte painting, trending on artstation HQ"
+  -  "[V]. A beautiful castle beside a waterfall in the woods, by Josef Thoma, matte painting, trending on artstation HQ"
+  -  "[X]. A beautiful castle beside a waterfall in the woods, by Josef Thoma, matte painting, trending on artstation HQ"
+
+learning_rate: 5e-5
+lr_scheduler: "constant"
+lr_warmup_steps: 0
+scale_lr: false
+
+seed: 1024
+use_ema: True
+gradient_checkpointing: True
+enable_xformers_memory_efficient_attention:  True
+allow_tf32: True
+max_grad_norm: 1.0
+delete_state: True
+
+
+
+
+#############
+num_train_epochs: 100
+negative_folder: null
+url_folder:
+  - ''
+revision: null
+variant: null
+dataset_name: null
+resolution: 512
+input_perturbation: 0
+dataset_config_name: null
+train_data_dir: null
+image_column: "image"
+caption_column: "text"
+max_train_samples: null
+cache_dir: null
+center_crop: false
+random_flip: false
+snr_gamma: null
+use_8bit_adam: false
+non_ema_revision: null
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.01
+adam_epsilon: 1e-8
+push_to_hub: false
+hub_token: null
+prediction_type: null
+hub_model_id: null
+logging_dir: "./logs"
+mixed_precision: null
+report_to: "tensorboard"
+local_rank: -1
+checkpoints_total_limit: null
+resume_from_checkpoint: null
+noise_offset: 0
+tracker_project_name: "text2image-fine-tune"
+optim_params: null
