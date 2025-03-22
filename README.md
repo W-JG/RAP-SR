@@ -1,5 +1,5 @@
 
-# **RAP-SR: RestorAtion Prior Enhancement in Diffusion Models for Realistic Image Super-Resolution**
+# **RAP-SR: RestorAtion Prior Enhancement in Diffusion Models for Realistic Image Super-Resolution [AAAI2025]**
 
 **Jiangang Wang | [Qingnan Fan](https://fqnchina.github.io/) | Jinwei Chen | Hong Gu | Feng Huang | [Wenqi Ren](https://rwenqi.github.io/)**  
 > Shenzhen Campus of Sun Yat-sen University  
@@ -8,6 +8,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2412.07149-b31b1b.svg)](https://arxiv.org/abs/2412.07149)   ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=W-JG/RAP-SR)
 
 ⭐ If you find **RAP-SR** useful for your research or projects, please consider **starring** this repository to support our work. Thank you! 😊
+
+🚩Accepted by AAAI2025
 
 ---
 
@@ -145,11 +147,13 @@ If you encounter issues accessing the paper on arXiv, you can:
 ## 📖 **Citation**
 If you find our work useful, please cite it as:
 ```bibtex
-@article{rap-sr,
+@inproceedings{rap-sr,
   title={RAP-SR: RestorAtion Prior Enhancement in Diffusion Models for Realistic Image Super-Resolution},
   author={Jiangang Wang, Qingnan Fan, Jinwei Chen, Hong Gu, Feng Huang, Wenqi Ren},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
 }
+
 ```
 
 ---
